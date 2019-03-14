@@ -1,0 +1,6 @@
+---
+- hosts: server1
+  tasks:
+    - name: "create a folder"
+      command: mkdir /home/ubuntu/ansible2
+

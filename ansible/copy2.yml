@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+      - name: example copying file with owner and permissions
+        copy:
+          src: /home/ubuntu/kl.txt
+          dest: /home/ubuntu/lk.txt
+          mode: 0644
