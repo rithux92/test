@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name: 'create a file'
+      command: mv /home/ubuntu/dd.txt /home/ubuntu/changed_dd.txt
+
+    - name: 'copy '
+      command: cp /home/ubuntu/changed_dd.txt /home/ubuntu/test/changed_dd.txt 

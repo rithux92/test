@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+          - name: 'execute script.sh in remoteand create a file with output'
+            script: script.sh 

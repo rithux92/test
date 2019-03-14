@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+          - name: 'copy module'
+            copy: src=/home/ubuntu/mp.txt dest=/home/ubuntu/

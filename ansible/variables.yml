@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+  vars: 
+     my_var: apache2
+  tasks:
+    - name: stop apache server
+      service: 
+        name: "{{my_var}}"
+        state: started
